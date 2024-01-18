@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="scoreboard">
+            <!-- Seasons -->
+            <div class="seasons">
+                <div class="season spring">
+                    <h2 >Spring:</h2>
+                    <span class="points" id="springPoints">0 points</span>
+                </div>
+                <div class="season summer">
+                    <h2>Summer:</h2>
+                    <span class="points" id="summerPoints">0 points</span>
+                </div>
+                <div class="season autumn">
+                    <h2>Autumn:</h2>
+                    <span class="points" id="autumnPoints">0 points</span>
+                </div>
+                <div class="season winter">
+                    <h2>Winter:</h2>
+                    <span class="points" id="winterPoints">0 points</span>
+                </div>
+            </div>
+            <div class="total-points">
+                <strong><p>Total:  <span id="total">0 points</span></p></strong>
+            </div>
+            
+            <!-- Missions -->
+            <div class="current-season">
+                <h2>Current season: <span id="current">Spring (AB)</span></h2>
+                <div class="missions">
+                    <div class="mission">
+                        <img id="A" src="./assets/missions_eng/edge.png" >
+                        <div class="points-box" id="pointsA">Points: 0</div>
+                    </div>
+                    <div class="mission">                  
+                        <img id="B" src="./assets/missions_eng/sleepy.png">
+                        <div class="points-box" id="pointsB">Points: 0</div>
+                    </div>
+                    <div class="mission">
+                        <img id="C" src="./assets/missions_eng/watering.png" >
+                        <div class="points-box" id="pointsC">Points: 0</div>
+                    </div>
+                    <div  class="mission">
+                        <img id="D" src="./assets/missions_eng/border.png">
+                        <div class="points-box" id="pointsD">Points: 0</div>
+                      
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- grid -->
+        <div>
+            <h1 style="margin-left: 20px;">Potato Map</h1> 
+            <div class="grid" id="grid"> </div>
+
+        </div>
+       
+        
+        <!-- next element box-->
+        <div class="next-element">
+            <button id="flip">Flip</button>
+            <button id="rotate">Rotate</button>
+            <div id="element" class="element-container"></div>
+            <div class="time">
+                <h4>Elapsed time: <span id="remaining-time">28</span> /28</h4>
+                <h1 id="over" style="width: 300px"></h1>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

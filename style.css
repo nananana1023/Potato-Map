@@ -1,0 +1,268 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url('./assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 30px;
+    font-family: monospace;
+}
+
+h1{
+    background-color: lightcyan;
+    padding: 3px;
+    border-radius: 5px;
+    border: #ccc;
+    width: 150px;
+}
+
+.active-mission{
+    border: 4px solid lightcyan;
+    box-shadow: 0px 0px 8px lightcyan; 
+    border-radius: 15px;
+}
+
+.grid {
+    display: block;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+    float: none;
+    clear: both;
+    border-radius: 3px;
+    margin-left: -8px;
+}
+
+.next-element {
+    display:block;
+    background-color: lightcyan;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 310px;
+}
+
+.scoreboard {
+    /* margin-left: -20px; */
+    position: relative;
+    left: -20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.seasons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.season {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.spring { background-color: rgb(103, 238, 103); }
+.summer { background-color: #dbed54; }
+.autumn { background-color: #b45936; }
+.winter { background-color: #68c4e3; }
+
+.total-points {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.current-season {
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.mission {
+    position: relative; 
+    left: -20px;
+    width: 300px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.mission img{
+    width: 350px;
+    margin: 7px;
+}
+
+.points-box {
+    position: absolute;
+    bottom: 20px; 
+    right: 10px; 
+    background-color: lightcyan;
+    color: black;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+
+.time {
+    position: relative; 
+    padding: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    border: 1px solid white;
+    background-color: beige;
+    padding: 0;
+    margin: 0;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+    .cell {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.mountain{
+    background-image: url('./assets/tiles/mountain_tile.png');
+}
+
+.water {
+    background-image: url('./assets/tiles/water_tile.png');
+}
+
+.town {
+    background-image: url('./assets/tiles/village_tile.png');
+}
+
+.farm {
+    background-image: url('./assets/tiles/plains_tile.png');
+}
+
+.forest {   
+    background-image: url('./assets/tiles/forest_tile.png');
+}
+
+.elements-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.element-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.time-display {
+    text-align: center; 
+    font-size: 16px;
+    margin: 7px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-display img {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.map-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    width: 80vw; 
+    height: 80vw; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-top: 100px;
+}
+
+.cell-highlight {
+    background-color: lightcyan;
+}
+
+
+.element-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.preview-row {
+    display: flex;
+    justify-content: center; 
+}
+
+.preview-cell {
+    border: 1px solid white; 
+    background-color: beige;
+    padding: 0;
+    margin: 0;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    position: relative;
+}
+
+#flip,
+#rotate {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(1, 214, 214);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; 
+    margin: 20px; 
+    font-family: monospace;
+}
+
+.mission-box {
+    background-color: lightcyan; 
+    border-radius: 8px; 
+}
+
+#missionForPoints p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+#score {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
